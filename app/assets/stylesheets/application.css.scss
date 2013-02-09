@@ -23,6 +23,26 @@ h1 {
 }
 
 
+@font-face {
+  font-family: 'salon';
+  src:font-url('salon.eot');
+  src:font-url('salon.eot?#iefix') format('embedded-opentype'),
+    font-url('salon.woff') format('woff'),
+    font-url('salon.ttf') format('truetype'),
+    font-url('fsalon.svg#salon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: 'salon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 
 /* GRID */
