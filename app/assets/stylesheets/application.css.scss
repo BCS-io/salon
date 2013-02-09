@@ -17,6 +17,17 @@
   @include box-sizing(border-box);
 }
 
+
+h1 {
+  font-size: 3em;
+}
+
+
+
+
+/* GRID */
+
+
 $pad: 20px;
 
 .grid {
