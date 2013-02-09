@@ -11,7 +11,7 @@ gem 'rails', '3.2.9'
 # in production environments by default.
 # However Heroku only works when  the following are
 # no longer in the assets group
-group :assets do
+#group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'compass-rails'
@@ -20,7 +20,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-end
+#end
 
 gem 'jquery-rails'
 
