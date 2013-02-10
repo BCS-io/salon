@@ -44,6 +44,19 @@ h1 {
 }
 
 
+/* TABLE */
+
+#content
+{
+width: 320px;
+margin: 0 auto
+}
+
+.opening-table table { width: 100%; }
+.opening-table tr td:first-child { text-align: left; }
+.opening-table tr td { text-align: right; }
+.opening-table tr th, .opening-table tr td { border-bottom: 1px dotted #ccc; }
+
 
 /* GRID */
 
