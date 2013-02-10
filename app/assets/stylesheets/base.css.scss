@@ -1,0 +1,49 @@
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+    font-size:100%;
+    line-height:1.125em; /* 16×1.125=18 */
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}.bodytext p {
+    font-size:0.875em;
+}.sidenote {
+    font-size:0.75em;
+}
+
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 4em;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+
+
+@font-face {
+  font-family: 'salon';
+  src:font-url('salon.eot');
+  src:font-url('salon.eot?#iefix') format('embedded-opentype'),
+    font-url('salon.woff') format('woff'),
+    font-url('salon.ttf') format('truetype'),
+    font-url('fsalon.svg#salon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: 'salon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
