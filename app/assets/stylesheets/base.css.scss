@@ -13,20 +13,6 @@ body {
 }
 
 
-h1 {
-  font-family: 'Philosopher', sans-serif;
-  font-size: 4em;
-  letter-spacing: 3px;
-}
-
-h2 {
-  font-family: 'Philosopher', sans-serif;
-  font-size: 2em;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-
-
 
 @font-face {
   font-family: 'salon';
@@ -47,3 +33,49 @@ h2 {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
+
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 4em;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+
+hr {
+  font-family: Arial, sans-serif; /* choose the font you like */
+  text-align: center; /* horizontal centering */
+  line-height: 1px; /* vertical centering */
+  height: 1px; /* gap between the lines */
+  font-size: 1em; /* choose font size you like */
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 20px 10px; /* 20px space above/below, 10px left/right */
+
+  /* ensure 1px gap between borders */
+  @include box-sizing(content-box);
+}
+
+hr:after {
+  font-size: 1.6em;
+  font-family: salon;
+  content: "\e004"; /* section sign */
+  color: #222;
+  display: inline; /* for vertical centering and background knockout */
+  background-color: #fff; /* same as background color */
+  padding: 0 0.5em; /* size of background color knockout */
+}
+
+
+/* opera doesn't render correctly. hide section sign */
+x:-o-prefocus, hr:after {
+  content: "";
+}
+
