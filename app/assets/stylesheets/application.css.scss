@@ -23,9 +23,14 @@ width: 320px;
 margin: 0 auto
 }
 
-.opening-table table { width: 100%; }
-.opening-table tr td:first-child { text-align: left; }
-.opening-table tr td { text-align: right; }
+
+thead th {
+    padding-bottom: 1em;
+}
+
+.opening-table table { width: 100%; margin-top: 5%; }
+.opening-table tr th:first-child, tr td:first-child { text-align: left; }
+.opening-table tr th, tr td { text-align: right; }
 .opening-table tr th, .opening-table tr td { border-bottom: 1px dotted #ccc; }
 
 
