@@ -39,6 +39,7 @@ h1 {
   font-family: 'Philosopher', sans-serif;
   font-size: 4em;
   letter-spacing: 3px;
+  color: #404639;
 }
 
 h2 {
@@ -46,6 +47,7 @@ h2 {
   font-size: 2em;
   letter-spacing: 1px;
   font-weight: 300;
+  color: #505649;
 }
 
 
@@ -71,7 +73,7 @@ http://thenounproject.com/noun/vase/#icon-No5787
 hr:after {
   font-family: salon;
   font-size: 2.2em;
-  content: "\e004"; /* section sign */
+  content: "\e000"; /* section sign */
   color: #222;
   display: inline; /* for vertical centering and background knockout */
   background-color: #fff; /* same as background color */
