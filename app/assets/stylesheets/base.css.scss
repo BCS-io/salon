@@ -40,7 +40,7 @@ h1 {
   font-family: 'Philosopher', sans-serif;
   font-size: 4em;
   letter-spacing: 3px;
-  color: #FAFAFA;
+  color: #050505;
 }
 
 h2 {
@@ -48,7 +48,7 @@ h2 {
   font-size: 2em;
   letter-spacing: 1px;
   font-weight: 300;
-  color: #F2F2F2;
+  color: #141414;
 }
 
 
@@ -61,9 +61,9 @@ hr {
   height: 1px; /* gap between the lines */
   font-size: 1em; /* choose font size you like */
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #aaa;
   margin: 20px 10px; /* 20px space above/below, 10px left/right */
-
+  color: #eee;
   /* ensure 1px gap between borders */
   @include box-sizing(content-box);
 }
@@ -77,6 +77,7 @@ hr:after {
   content: "\e000"; /* section sign */
   display: inline; /* for vertical centering and background knockout */
   background-color: #fff; /* same as background color */
+  color: #aaa;
   padding: 0 0.5em; /* size of background color knockout */
 }
 
