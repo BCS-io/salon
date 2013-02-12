@@ -18,31 +18,3 @@
 
 
 
-
-/* GRID */
-
-
-$pad: 20px;
-
-.grid {
-  background: white;
-  margin: 0 0 $pad 0;
-
-  &:after {
-    /* Or @extend clearfix */
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-[class*='col-'] {
-  float: left;
-  padding-right: $pad;
-  .grid &:last-of-type {
-    padding-right: 0;
-  }
-}
-.col-1 {
-  width: 100%;
-}
