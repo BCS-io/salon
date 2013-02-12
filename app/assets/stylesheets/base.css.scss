@@ -69,6 +69,10 @@ thead th {
     color: adjust-hue( $base-color, 30% );
 }
 
+.basic-table td {
+    color: adjust-hue( $base-color, 70% );
+}
+
 
 
 hr {
