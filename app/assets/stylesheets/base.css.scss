@@ -43,6 +43,7 @@ h1 {
   font-family: 'Philosopher', sans-serif;
   font-size: 4em;
   letter-spacing: 3px;
+  line-height: 0.5em;
   color: $base-color;
 }
 
@@ -83,7 +84,7 @@ thead th {
 //   @include box-shadow(inset 0 1px 0 lighten($spot-color, 20%));
 // }
 
-.base-button {
+.header .base-button {
   -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
   -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
   box-shadow:inset 0px 1px 0px 0px #f5978e;

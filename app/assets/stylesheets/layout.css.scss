@@ -5,8 +5,26 @@
   margin: 0 auto
 }
 
-.hero {
+.header a {
+  float: right;
+  display: inline-block;
+  position: relative;
+    top: 18px;
+  left: 10px;
+  background: #555;
+}
+
+.header h1 {
+  // position: relative;
   float: left;
+  top: 18px;
+  left: 10px;
+}
+
+.hero {
+  float: right;
+  top: 0.5em;
+  position: absolute;
 }
 .sidebar {}
 
