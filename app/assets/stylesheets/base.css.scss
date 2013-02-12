@@ -58,21 +58,21 @@ h2 {
 /* TABLE */
 
 thead th {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
-.basic-table table { width: 100%; margin-top: 5%; }
+.basic-table table { width: 100%; margin-top: 2%; }
 .basic-table tr th:first-child, tr td:first-child {
   text-align: left;
  }
 .basic-table tr th, tr td { text-align: right; }
 .basic-table tr th, .basic-table tr td { border-bottom: 1px dotted #ccc; }
 .basic-table th {
-    color: adjust-hue( $base-color, 30% );
+    color: lighten( $base-color, 10% );
 }
 
 .basic-table td {
-    color: adjust-hue( $base-color, 70% );
+    color: lighten( $base-color, 20% );
 }
 
 /* BUTTON */
