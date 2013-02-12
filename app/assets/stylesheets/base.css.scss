@@ -2,6 +2,8 @@
   @include box-sizing(border-box);
 }
 
+$base-color: #343434;
+
 body {
     font-size:100%;
     font-size: 20px;
@@ -40,7 +42,7 @@ h1 {
   font-family: 'Philosopher', sans-serif;
   font-size: 4em;
   letter-spacing: 3px;
-  color: #050505;
+  color: $base-color;
 }
 
 h2 {
@@ -48,9 +50,24 @@ h2 {
   font-size: 1.6em;
   letter-spacing: 1px;
   font-weight: 300;
-  color: #1C1C1C;
+  color: adjust-hue( $base-color, 15% )
 }
 
+/* TABLE */
+
+thead th {
+    padding-bottom: 1em;
+}
+
+.basic-table table { width: 100%; margin-top: 5%; }
+.basic-table tr th:first-child, tr td:first-child {
+  text-align: left;
+ }
+.basic-table tr th, tr td { text-align: right; }
+.basic-table tr th, .basic-table tr td { border-bottom: 1px dotted #ccc; }
+.basic-table th {
+    color: adjust-hue( $base-color, 30% );
+}
 
 
 

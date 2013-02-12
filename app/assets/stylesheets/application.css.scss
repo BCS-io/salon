@@ -17,21 +17,6 @@
 @import "layout";
 
 
-/* TABLE */
-
-thead th {
-    padding-bottom: 1em;
-}
-
-.basic-table table { width: 100%; margin-top: 5%; }
-.basic-table tr th:first-child, tr td:first-child {
-  text-align: left;
- }
-.basic-table tr th, tr td { text-align: right; }
-.basic-table tr th, .basic-table tr td { border-bottom: 1px dotted #ccc; }
-.basic-table th {
-    color: #141414;
-}
 
 
 /* GRID */
