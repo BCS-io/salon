@@ -125,8 +125,8 @@ hr {
   font-size: 1em; /* choose font size you like */
   border: none;
   border-bottom: 1px solid #aaa;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: #eee;
   /* ensure 1px gap between borders */
   @include box-sizing(content-box);
