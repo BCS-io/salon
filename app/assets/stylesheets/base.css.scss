@@ -9,26 +9,39 @@ $brand-color: #41a2bb;
 html {
   padding: 0;
   margin: 0;
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
 }
 
+
+@mixin body-text
+{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@mixin headline-text
+{
+  font-family: 'Philosopher', sans-serif;
+}
+
+
 body {
-    font-size:100%;
-    font-size: 20px;
-    line-height:1.4em; /* 16×1.125=18 */
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    background-color: white;
-}.bodytext p {
-    font-size:0.875em;
-}.sidenote {
-    font-size:0.75em;
+  @include body-text;
+  font-size:100%;
+  @include font-size(20);
+  background-color: white;
 }
 
 .footer {
   background-color: lighten( $base-color, 20% );
-  padding: 0;
-  margin: 0;
+  @include body-text;
+  @include font-size(20);
   span {
     color: $brand-color;
+  }
+  a {
+    color: white;
+    @include body-text;
+    text-decoration:none;
   }
 }
 
@@ -55,15 +68,15 @@ body {
 
 
 h1 {
-  font-family: 'Philosopher', sans-serif;
-  font-size: 4em;
+  @include headline-text;
+  @include font-size(80);
   letter-spacing: 3px;
   color: $base-color;
 }
 
 h2 {
-  font-family: 'Philosopher', sans-serif;
-  font-size: 1.6em;
+  @include headline-text;
+  @include font-size(32);
   letter-spacing: 1px;
   font-weight: 300;
   color: adjust-hue( $base-color, 15% )
@@ -94,13 +107,6 @@ thead th {
 }
 
 /* BUTTON */
-
-// .base-button {
-//   background-color: $spot-color;
-//   border: 1px solid darken($spot-color, 20%);
-//   text-shadow: 0 -1px 0 darken($spot-color, 10%);
-//   @include box-shadow(inset 0 1px 0 lighten($spot-color, 20%));
-// }
 
 .base-button {
   -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
