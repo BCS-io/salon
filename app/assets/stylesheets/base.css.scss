@@ -125,8 +125,8 @@ hr {
   font-size: 1em; /* choose font size you like */
   border: none;
   border-bottom: 1px solid #aaa;
-  margin-top: 35px; /* doesn't seem to like % of IOS Safari for HR */
-  margin-bottom: 40px; /* doesn't seem to like % of IOS Safari HR */
+  margin-top: 55px; /* doesn't seem to like % of IOS Safari for HR */
+  margin-bottom: 70px; /* doesn't seem to like % of IOS Safari HR */
   color: #eee;
   /* ensure 1px gap between borders */
   @include box-sizing(content-box);
