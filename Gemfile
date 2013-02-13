@@ -64,6 +64,7 @@ gem "spork", :group => :development
 gem 'guard-rspec', :group => :development
 gem 'guard-livereload', :group => :development
 gem 'guard-spork', :group => [:test]
+gem 'newrelic_rpm'
 
 group :production do
   gem 'rack-google_analytics', :require => "rack/google_analytics"
