@@ -4,6 +4,12 @@
 
 $base-color: #343434;
 $spot-color: #AD141E;
+$brand-color: #41a2bb;
+
+html {
+  padding: 0;
+  margin: 0;
+}
 
 body {
     font-size:100%;
@@ -15,6 +21,15 @@ body {
     font-size:0.875em;
 }.sidenote {
     font-size:0.75em;
+}
+
+.footer {
+  background-color: lighten( $base-color, 20% );
+  padding: 0;
+  margin: 0;
+  span {
+    color: $brand-color;
+  }
 }
 
 
@@ -53,6 +68,10 @@ h2 {
   font-weight: 300;
   color: adjust-hue( $base-color, 15% )
 }
+
+
+
+
 
 /* TABLE */
 
