@@ -46,6 +46,9 @@ body {
       @include font-size(25);
     // text-decoration:none;
   }
+  .element {
+    padding: 0.5em 0;
+  }
 }
 
 
