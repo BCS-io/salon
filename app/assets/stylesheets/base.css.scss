@@ -32,6 +32,7 @@ body {
 }
 
 .footer {
+  text-align: left;
   background-color: lighten( $base-color, 20% );
   @include body-text;
   @include font-size(25);
