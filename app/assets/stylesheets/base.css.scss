@@ -34,13 +34,15 @@ body {
 .footer {
   background-color: lighten( $base-color, 20% );
   @include body-text;
-  @include font-size(16);
+  @include font-size(25);
   span {
     color: $brand-color;
+    @include font-size(25);
   }
   a {
     color: white;
     @include body-text;
+      @include font-size(25);
     // text-decoration:none;
   }
 }
