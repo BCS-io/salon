@@ -35,15 +35,15 @@ body {
   text-align: left;
   background-color: lighten( $base-color, 20% );
   @include body-text;
-  @include font-size(25);
+  @include font-size(20);
   span {
     color: $brand-color;
-    @include font-size(25);
+    @include font-size(20);
   }
   a {
     color: white;
     @include body-text;
-      @include font-size(25);
+      @include font-size(20);
     // text-decoration:none;
   }
   .element {
