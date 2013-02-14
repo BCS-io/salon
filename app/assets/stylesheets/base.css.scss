@@ -75,14 +75,10 @@ body {
 
 h1 {
   @include headline-text;
-  @include font-size(70);
+  @include font-size(80);
   margin-bottom: 0;
   letter-spacing: 3px;
   color: $base-color;
-}
-
-.header h2 {
-  margin-top: 0;
 }
 
 h2 {
@@ -93,8 +89,13 @@ h2 {
   color: adjust-hue( $base-color, 15% )
 }
 
+/* Hack to Get heaaing together */
 
-
+.header {
+  h1 {
+    line-height: 0;
+  }
+}
 
 
 /* TABLE */
