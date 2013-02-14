@@ -34,14 +34,14 @@ body {
 .footer {
   background-color: lighten( $base-color, 20% );
   @include body-text;
-  @include font-size(20);
+  @include font-size(16);
   span {
     color: $brand-color;
   }
   a {
     color: white;
     @include body-text;
-    text-decoration:none;
+    // text-decoration:none;
   }
 }
 
@@ -116,12 +116,10 @@ thead th {
   background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
   background-color:#fe1a00;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-  border-radius:6px;
+  @include border-radius(6px);
   border:1px solid #d83526;
   display:inline-block;
-  color:#ffffff;
+  color: white;
   font-size:1.4em;
   font-weight:bold;
   padding:0.3em 1em;
