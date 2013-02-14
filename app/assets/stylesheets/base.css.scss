@@ -75,9 +75,14 @@ body {
 
 h1 {
   @include headline-text;
-  @include font-size(80);
+  @include font-size(70);
+  margin-bottom: 0;
   letter-spacing: 3px;
   color: $base-color;
+}
+
+.header h2 {
+  margin-top: 0;
 }
 
 h2 {
