@@ -1,3 +1,5 @@
+<% if allowed_device? %>
+
 <header>
   <h1>KB</h1>
   <h2>hair design</h2>
@@ -17,3 +19,8 @@
   </div> <!-- grid -->
 </div> <!-- main-content -->
 <%= render :partial => 'footer' %>
+<% else %>
+
+<%= render :partial => 'original_site' %>
+
+<% end %>

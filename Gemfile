@@ -37,7 +37,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger', group: [:development, :test]
 
 gem "puma", ">= 1.6.3"
 gem "pg", ">= 0.14.1"
@@ -65,6 +65,7 @@ gem 'guard-rspec', :group => :development
 gem 'guard-livereload', :group => :development
 gem 'guard-spork', :group => [:test]
 gem 'newrelic_rpm'
+gem 'useragent'
 
 group :production do
   gem 'rack-google_analytics', :require => "rack/google_analytics"
