@@ -31,7 +31,7 @@ body {
   background-color: white;
 }
 
-.footer {
+footer {
   text-align: left;
   background-color: lighten( $base-color, 20% );
   @include body-text;
@@ -91,7 +91,7 @@ h2 {
 
 /* Hack to Get heaaing together */
 
-.header {
+header {
   h1 {
     line-height: 0;
   }
