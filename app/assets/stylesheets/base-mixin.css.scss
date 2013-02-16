@@ -5,3 +5,10 @@
   font-size: ($sizeValue / 10) + rem;
   line-height: ($line / 10) + rem;
 }
+
+
+@mixin module {
+  margin-top:  5%;
+  margin-bottom:  5%;
+}
+

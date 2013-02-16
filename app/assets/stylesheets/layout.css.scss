@@ -21,9 +21,14 @@ header  {
 {
 }
 
+
+
 .module {
-  margin-top:  5%;
-  margin-bottom:  5%;
+  @include module;
+}
+
+article {
+  @include module;
 }
 
 
