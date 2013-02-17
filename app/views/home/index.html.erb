@@ -1,26 +1,60 @@
 <% if allowed_device? %>
 
-<header>
-  <h1>KB</h1>
-  <h2>hair design</h2>
-  <a class="base-button" href="tel:+441213081439"><span aria-hidden="true" data-icon="&#xe00a;"></span>&nbsp;Call us</a>
-</header>
+<div id="outer-wrap">
+<div id="inner-wrap">
 
-<div class="main-content">
-  <div class="grid">
-    <div class="col-1">
-      <hr>
-      <%= render :partial => 'ladies_services' %>
-      <hr>
-      <%= render :partial => 'mens_services' %>
-      <hr>
-      <%= render :partial => 'opening_hours' %>
-    </div> <!-- col-1 -->
-  </div> <!-- grid -->
-</div> <!-- main-content -->
-<%= render :partial => 'footer' %>
+    <a class="nav-btn no-flick banner" id="nav-open-btn" href="#nav">Book Navigation</a>
+    <header id="top" role="banner" class="no-flick">
+    <div class="block">
+      <br>
+    <h1>KB</h1>
+      <BR>
+    <h2>hair design</h2>
+    <a class="base-button" href="tel:+441213081439"><span aria-hidden="true" data-icon="&#xe00a;"></span>&nbsp;Call us</a>
+   </div>
+  </header>
+
+    <nav id="nav" role="navigation">
+      <div class="block">
+          <h2 class="block-title">Chapters</h2>
+          <ul>
+               <li class="is-active">
+                  <a href="#">About</a>
+              </li><!--
+           --><li>
+                  <a href="#">Contact</a>
+              </li><!--
+           -->
+          </ul>
+            <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
+      </div>
+    </nav>
+
+
+    <div id="main" role="main">
+      <div class="grid">
+        <div class="col-1">
+          <hr>
+          <%= render :partial => 'ladies_services' %>
+          <hr>
+          <%= render :partial => 'mens_services' %>
+          <hr>
+          <%= render :partial => 'opening_hours' %>
+        </div> <!-- col-1 -->
+      </div> <!-- grid -->
+    </div> <!-- main-content -->
+    <%= render :partial => 'footer' %>
+
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap-->
+
+
 <% else %>
 
 <%= render :partial => 'original_site' %>
 
 <% end %>
+
+<%= javascript_include_tag("main") %>
