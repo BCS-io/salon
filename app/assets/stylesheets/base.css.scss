@@ -26,6 +26,8 @@ html {
 
 body {
   @include body-text;
+  max-width: 100%;
+  min-width: 14em;
   font-size:100%;
   @include font-size(20);
   background-color: white;

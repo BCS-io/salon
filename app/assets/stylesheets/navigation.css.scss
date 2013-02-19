@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@-ms-viewport {
-  width: device-width;
-}
-
-@viewport {
-  width: device-width;
-}
-
 /*
  *
  *  Copyright (c) David Bushell | http://dbushell.com/
@@ -38,11 +30,6 @@ summary {
 }
 
 
-body {
-  margin: 0;
-}
-
-
 svg:not(:root) {
   overflow: hidden;
 }
@@ -56,12 +43,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0;
 }
 
-
-body {
-  position: relative;
-  width: 100%;
-  min-width: 20em;
-}
 
 .block {
   position: relative;
