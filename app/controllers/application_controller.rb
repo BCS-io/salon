@@ -14,9 +14,10 @@ class ApplicationController < ActionController::Base
                        Browser.new("iPod","Safari", "4.0")]
 
   def allowed_device?
-    user_agent = UserAgent.parse(request.user_agent)
-    logger.info "UserAgent Platform " + user_agent.platform
-    SupportedBrowser.detect {|browser| user_agent.platform == browser.platform}
+    # user_agent = UserAgent.parse(request.user_agent)
+    # logger.info "UserAgent Platform " + user_agent.platform
+    # SupportedBrowser.detect {|browser| user_agent.platform == browser.platform}
+    true
   end
 
 end
