@@ -4,9 +4,9 @@
 <div id="inner-wrap">
 
     <a class="nav-btn banner" id="nav-toggle-btn" href="#nav">Navigation</a>
+    <br>
     <header id="top" role="banner" class="no-flick">
     <div class="block">
-      <br>
     <h1>KB</h1>
       <BR>
     <h2>hair design</h2>
@@ -14,23 +14,7 @@
    </div>
   </header>
 
-    <nav id="nav" role="navigation">
-      <div class="block">
-          <h2 class="block-title">KB Hair Design</h2>
-          <ul>
-            <li class="is-active">
-                  <a href="#">Home</a>
-              </li><!--
-          --><li>
-                  <a href="#">About</a>
-              </li><!--
-           --><li>
-                  <a href="#">Contact</a>
-              </li><!--
-           -->
-          </ul>
-      </div>
-    </nav>
+    <%= render :partial => 'shared/navigation' %>
 
 
     <div id="main" role="main">
@@ -45,7 +29,7 @@
         </div> <!-- col-1 -->
       </div> <!-- grid -->
     </div> <!-- main-content -->
-    <%= render :partial => 'footer' %>
+    <%= render :partial => 'shared/social' %>
 
 </div>
 <!--/#inner-wrap-->
