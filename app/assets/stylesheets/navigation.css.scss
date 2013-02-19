@@ -51,34 +51,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   max-width: 60em;
 }
 
-.close-btn {
-  display: block;
-  width: 2.625em;
-  height: 2.25em;
-  padding: 0;
-  border: 0;
-  outline: none;
-  background: #333333;
-  // image-url("nav/close-btn.svg") left center no-repeat;
-  background-size: 1.875em 1.875em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.no-svg .close-btn {
-  background-image: image-url("nav/close-btn.png");
-}
-.close-btn:focus, .close-btn:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
 .nav-btn {
   display: block;
-  // width: 2.625em;
   width: 100%;
   height: 2.25em;
   padding: 0;
@@ -121,9 +95,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   width: 100%;
   color: #fff;
 }
-#nav .close-btn {
-  display: none;
-}
+
 #nav .block-title {
   border: 0;
   clip: rect(0 0 0 0);
@@ -207,14 +179,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     z-index: 1;
     height: 0;
   }
-  #nav:target .close-btn {
-    display: block;
-  }
-  #nav .close-btn {
-    position: absolute;
-    top: -3.75em;
-    left: 1.875em;
-  }
+
   #nav .block {
     position: relative;
     padding: 0;
@@ -253,16 +218,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   .js-ready #nav .block {
     background: transparent;
   }
-  .js-ready #nav .close-btn {
-    display: block;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-    opacity: 0.7;
-  }
-  .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-  }
-
   .js-ready #nav {
     left: -70%;
   }
