@@ -34,6 +34,12 @@ body {
 }
 
 footer {
+  color: white;
+ background-color: lighten( $base-color, 0% );
+ font-size: 0.75em;
+}
+
+.social {
   text-align: left;
   background-color: lighten( $base-color, 20% );
   @include body-text;

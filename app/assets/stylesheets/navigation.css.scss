@@ -68,13 +68,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   background: #AAA image-url("nav/nav-icon.svg") left center no-repeat;
   border: solid 1px #6D6D6D;
 
+  &:hover, &:focus {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
 }
 .no-svg .nav-btn {
   background-image: image-url("nav/nav-icon.png");
-}
-.nav-btn:hover, .nav-btn:focus {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
 }
 
 #outer-wrap {
@@ -94,52 +94,61 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   overflow: hidden;
   width: 100%;
   color: #fff;
+
+  .block-title {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+   .block {
+      z-index: 2;
+      position: relative;
+      padding: 0.75em 1.25em;
+      background: #333333;
+    }
 }
 
-#nav .block-title {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-#nav .block {
-  z-index: 2;
-  position: relative;
-  padding: 0.75em 1.25em;
-  background: #333333;
-}
+
 #nav ul {
   *zoom: 1;
   display: block;
+
+  &:before, #nav ul:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
 }
-#nav ul:before, #nav ul:after {
-  content: "";
-  display: table;
-}
-#nav ul:after {
-  clear: both;
-}
+
 #nav li {
   display: block;
-}
-#nav li a {
-  display: block;
-  color: #ccc;
-  font-size: 0.875em;
-  line-height: 1.28571em;
-  font-weight: bold;
-  outline: none;
-}
-#nav li a:focus, #nav li a:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-}
-#nav li.is-active a {
-  color: #fff;
+
+  a {
+    display: block;
+    color: #ccc;
+    font-size: 0.875em;
+    line-height: 1.28571em;
+    font-weight: bold;
+    outline: none;
+
+    &:focus, &:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .is-active a {
+    color: #fff;
+  }
 }
 
 #top {
@@ -147,18 +156,20 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   position: relative;
   color: #fff;
   background: white;
-}
-#top .block-title {
-  margin: 0;
-  font-size: 1.875em;
-  line-height: 1.2em;
-  text-align: center;
-  white-space: nowrap;
-}
-#top .nav-btn {
-  position: absolute;
-  top: 1.5em;
-  left: 1.875em;
+
+  .block-title {
+    margin: 0;
+    font-size: 1.875em;
+    line-height: 1.2em;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .nav-btn {
+    position: absolute;
+    top: 1.5em;
+    left: 1.875em;
+  }
 }
 
 #main {
@@ -170,11 +181,40 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 
 @media screen and (max-width: 85em) {
+
   #nav {
     position: absolute;
     top: 0;
     padding-top: 5.25em;
+
+    li {
+      position: relative;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      &.is-active:after {
+        z-index: 50;
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -0.03125em;
+        margin-top: -0.625em;
+        border-top: 0.625em transparent solid;
+        border-bottom: 0.625em transparent solid;
+        border-right: 0.625em white solid;
+      }
+
+      a {
+         padding: 0.85714em 2.14286em;
+      }
+    }
   }
+
+
   #nav:not(:target) {
     z-index: 1;
     height: 0;
@@ -184,33 +224,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     position: relative;
     padding: 0;
   }
-  #nav li {
-    position: relative;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  #nav li:last-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  #nav li.is-active:after {
-    z-index: 50;
-    display: block;
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -0.03125em;
-    margin-top: -0.625em;
-    border-top: 0.625em transparent solid;
-    border-bottom: 0.625em transparent solid;
-    border-right: 0.625em white solid;
-  }
-  #nav li a {
-    padding: 0.85714em 2.14286em;
-  }
 
-   .js-ready #nav {
+  .js-ready #nav {
     height: 100%;
     width: 70%;
-    background: #333333;
+    background: $base-color;
     -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
