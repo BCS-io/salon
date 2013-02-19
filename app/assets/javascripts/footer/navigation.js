@@ -129,15 +129,15 @@
             document.getElementById('nav-open-btn').addEventListener('click', app.toggleNav, false);
 
             // close nav with main "close" button
-            document.getElementById('nav-close-btn').addEventListener('click', app.toggleNav, false);
+            // document.getElementById('nav-close-btn').addEventListener('click', app.toggleNav, false);
 
             // close nav by touching the partial off-screen content
             document.addEventListener('click', function(e)
             {
-                if (nav_open && !hasParent(e.target, 'nav')) {
-                    e.preventDefault();
-                    app.closeNav();
-                }
+                // if (nav_open && !hasParent(e.target, 'nav')) {
+                //     e.preventDefault();
+                //     app.closeNav();
+                // }
             },
             true);
 

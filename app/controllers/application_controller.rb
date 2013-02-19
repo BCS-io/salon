@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   #  not this is the minium browser we accept
   SupportedBrowser = [ Browser.new("iPhone", "Safari", "5.0") ,
                        Browser.new("iPod","Safari", "4.0"),
+                       Browser.new("Windows","Safari", "4.0"),
                        Browser.new("X11","Chrome", "24")]
 
   def allowed_device?
