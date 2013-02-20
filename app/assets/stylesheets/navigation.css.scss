@@ -182,6 +182,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 @media screen and (max-width: 85em) {
 
+.is-active {
+        background-color: $brand-color;
+      }
+
   #nav {
     position: absolute;
     top: 0;
@@ -209,7 +213,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
       }
 
       a {
-         padding: 0.85714em 2.14286em;
+         padding: 0.85714em 2rem;
       }
     }
   }

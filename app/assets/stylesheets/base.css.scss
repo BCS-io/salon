@@ -35,7 +35,7 @@ body {
 
 footer {
   color: white;
- background-color: lighten( $base-color, 0% );
+ background-color: lighten( $base-color, 15% );
  font-size: 0.75em;
 }
 
@@ -55,7 +55,7 @@ footer {
     // text-decoration:none;
   }
   .element {
-    padding: 0.5em 0;
+    padding: 0.3em 0;
   }
 }
 
@@ -97,6 +97,16 @@ h2 {
   color: adjust-hue( $base-color, 15% )
 }
 
+
+h3 {
+  @include headline-text;
+  @include font-size(24);
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: white;
+}
+
+
 /* Hack to Get heaaing together */
 
 header {
@@ -111,7 +121,6 @@ header {
 thead th {
     padding-bottom: 0.5em;
 }
-
 .basic-table table { width: 100%; margin-top: 2%; }
 .basic-table tr th:first-child, tr td:first-child {
   text-align: left;
