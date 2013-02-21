@@ -34,12 +34,24 @@ body {
 }
 
 footer {
-  color: white;
+ color: white;
  background-color: lighten( $base-color, 15% );
  font-size: 0.75em;
+
+ a {
+  color:white;
+  text-align: center;
+ }
 }
 
+.align-center {
+  width: 100%;
+  text-align: center;
+}
+
+
 .social {
+  padding-top: 1em;
   text-align: left;
   background-color: lighten( $base-color, 20% );
   @include body-text;
@@ -169,7 +181,7 @@ thead th {
 /* HR */
 
 
-hr {
+.pic {
   font-family: Arial, sans-serif; /* choose the font you like */
   text-align: center; /* horizontal centering */
   line-height: 1px; /* vertical centering */
@@ -187,7 +199,7 @@ hr {
 http://thenounproject.com/noun/vase/#icon-No5787
 */
 
-hr:after {
+.pic:after  {
   font-family: salon;
   font-size: 2.2em;
   content: "\e000"; /* section sign */
