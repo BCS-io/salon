@@ -55,8 +55,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   display: block;
   width: 100%;
   height: 2.25em;
-  padding: 0;
-  border: 0;
   outline: none;
   background-size: 1.875em 1.5em;
   overflow: hidden;
@@ -81,11 +79,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   position: relative;
   overflow: hidden;
   width: 100%;
+  background-color: $base-color;
 }
 
 #inner-wrap {
   position: relative;
   width: 100%;
+  background-color: white;
 }
 
 #nav {
@@ -250,7 +250,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   .js-nav #inner-wrap {
     left: 70%;
   }
-
 
   .csstransforms3d.csstransitions.js-ready #nav {
     left: 0;
