@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -31,16 +31,16 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano', '~> 2.14.2'
+gem 'capistrano-rbenv'
 
 # To use debugger
-gem 'debugger', group: [:development, :test]
+gem 'debugger', ">= 1.5.0", group: [:development, :test]
 
-gem "puma", ">= 1.6.3"
-gem "pg", ">= 0.14.1"
+gem "pg", ">= 0.15.1"
 gem "rspec-rails", ">= 2.12.2", :group => [:development, :test]
 gem "capybara", ">= 2.0.2", :group => :test
 gem "database_cleaner", ">= 0.9.1", :group => :test
@@ -55,16 +55,13 @@ gem "simple_form", ">= 2.0.4"
 gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "figaro", ">= 0.5.3"
 gem "better_errors", ">= 0.3.2", :group => :development
-gem "binding_of_caller", ">= 0.6.8", :group => :development
+gem "binding_of_caller", ">= 0.7.1", :group => :development
 gem "libv8", ">= 3.11.8"
 gem "therubyracer", ">= 0.11.3", :group => :assets, :platform => :ruby, :require => "v8"
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 gem 'rb-inotify', '~> 0.8.8', group: [:development, :test]
-gem "spork", :group => :development
 gem 'guard-rspec', :group => :development
 gem 'guard-livereload', :group => :development
-gem 'guard-spork', :group => [:test]
-gem 'newrelic_rpm'
 gem 'useragent'
 gem 'high_voltage'
 
